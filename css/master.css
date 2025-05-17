@@ -1,0 +1,156 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-padding-top: 64px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.up i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--color);
+    color: white;
+    opacity: 0.20;
+    transition: 0.5s;
+    font-size: 1.20rem;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.up i:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.up {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.left-0 {
+    left: 0px !important;
+}
+
+.loading-screen {
+    z-index: 999;
+    display: flex;
+}
+
+.inner-loading-screen {
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display: flex;
+}
+
+
+/* ~ ------->  navbar section */
+
+.sidebar {
+    left: -250px;
+    transition: all 2s ease;
+    z-index: 1000;
+}
+
+.sidebar .list-unstyled li {
+    transition: 0.5s;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.sidebar .list-unstyled li:hover {
+    transform: translateX(20px);
+    background-color: white;
+    color: black !important;
+}
+
+.sidebar .list-unstyled li:hover a {
+    color: black !important;
+}
+
+.active {
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: white;
+    color: black !important;
+}
+
+.Contact {
+    height: 100vh;
+}
+
+
+/* ~ ------->  Recipes section */
+
+.Recipes .all-recipes .text-recip,
+.text-Categori {
+    background-color: rgba(255, 255, 255, 0.679);
+    bottom: -600px;
+    height: 100%;
+    width: 100%;
+    transition: bottom 0.5s ease;
+}
+
+.Recipes .recip:hover .text-recip,
+.Categori:hover .text-Categori {
+    bottom: 0px;
+}
+
+.Description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.details .imaggg {
+    width: 40%;
+}
+
+.details .all-details {
+    width: 55%;
+}
+
+@media (max-width: 850px) {
+    .details .imaggg {
+        width: 100%;
+    }
+    .details .all-details {
+        width: 100%;
+    }
+}

@@ -130,9 +130,9 @@ async function getArea() {
     data.map(function(e) {
     allAreas.innerHTML += `
         <div class=" col-lg-3 col-md-4 col-6">
-            <div onclick="getAreaMeals('${e.strArea}')" class="Area position-relative p-2 start-0 top-0 text-black rounded-2 text-center">
-                <i class="fa-solid fa-house-laptop fa-4x text-white mb-3"></i>
-                <h2 class=" fw-bold text-white">${e.strArea} </h2>
+            <div onclick="getAreaMeals('${e.strArea}')" class="Area position-relative p-2 start-0 top-0 text-warning rounded-2 text-center">
+                <i class="fa-solid fa-house-laptop fa-4x mb-3"></i>
+                <h2 class=" fw-bold">${e.strArea} </h2>
             </div>
         </div>
     `
@@ -209,7 +209,7 @@ async function getIngredients() {
     data.map(function(e) {
     ingredients.innerHTML += `
         <div class="col-lg-3 col-md-6 col-12">
-            <div onclick="getIngredientsMeals('${e.strIngredient}')" class="text-center text-white">
+            <div onclick="getIngredientsMeals('${e.strIngredient}')" class="text-center text-warning">
                 <i class="fa-solid fa-drumstick-bite fa-4x"></i>
                 <h2 class="fw-bold">${e.strIngredient} </h2>
                 <p class="Description">${e.strDescription}</p>

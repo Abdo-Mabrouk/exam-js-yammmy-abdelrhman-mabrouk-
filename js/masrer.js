@@ -19,6 +19,18 @@ $("#icon2").click(function() {
         $(this).addClass("fa-bars");
     }
 });
+$(".dark-mode").click(function() {
+    $("body").toggleClass("bg-black");
+    $("body").toggleClass("text-white");
+    $(".sidebar-data").toggleClass("bg-black");
+    if ($(this).hasClass('fa-moon')) {
+        $(this).removeClass("fa-moon");
+        $(this).addClass("fa-sun");
+    } else {
+        $(this).removeClass("fa-sun");
+        $(this).addClass("fa-moon");
+    }
+});
 
 
 //!_______________________(START Categories)_________________________________
@@ -80,13 +92,13 @@ async function getMealDetails(id) {
         }
         allCategories.innerHTML += `
             <div class="col-12">
-                    <div class="details d-flex justify-content-between p-3 text-white flex-column flex-lg-row">
+                    <div class="details d-flex justify-content-between p-3 text-warning flex-column flex-lg-row">
             <div class="imaggg">
                 <img class="d-block" src="${d.strMealThumb} " alt="" width="100%">
-                <h3 class="text-white my-3 p-2">${d.strMeal} </h3>
+                <h3 class="text-warning my-3 p-2">${d.strMeal} </h3>
             </div>
             <div class="all-details">
-                <p class="fs-3 fw-bold text-white">Instructions</p>
+                <p class="fs-3 fw-bold text-warning">Instructions</p>
                 <p class="des">${d.strInstructions}</p>
                 <p class="Area"><span class=" h4 my-3">Area :</span>${d.strArea}</p>
                 <p class="Category"><span class=" h4 my-3">Category :</span> ${d.strCategory}</p>
@@ -163,13 +175,13 @@ async function getAreaDetails(id) {
         }
         allAreas.innerHTML += `
             <div class="col-12">
-                    <div class="details d-flex justify-content-between p-3 text-white flex-column flex-lg-row">
+                    <div class="details d-flex justify-content-between p-3 text-warning flex-column flex-lg-row">
             <div class="imaggg">
                 <img class="d-block" src="${d.strMealThumb} " alt="" width="100%">
-                <h3 class="text-white my-3 p-2">${d.strMeal} </h3>
+                <h3 class="text-warning my-3 p-2">${d.strMeal} </h3>
             </div>
             <div class="all-details">
-                <p class="fs-3 fw-bold text-white">Instructions</p>
+                <p class="fs-3 fw-bold text-warning">Instructions</p>
                 <p class="des">${d.strInstructions}</p>
                 <p class="Area"><span class=" h4 my-3">Area :</span>${d.strArea}</p>
                 <p class="Category"><span class=" h4 my-3">Category :</span> ${d.strCategory}</p>
@@ -244,13 +256,13 @@ async function getingredientsDetails(id) {
         }
         ingredients.innerHTML += `
             <div class="col-12">
-                    <div class="details d-flex justify-content-between p-3 text-white flex-column flex-lg-row">
+                    <div class="details d-flex justify-content-between p-3 text-warning flex-column flex-lg-row">
             <div class="imaggg">
                 <img class="d-block" src="${d.strMealThumb} " alt="" width="100%">
-                <h3 class="text-white my-3 p-2">${d.strMeal} </h3>
+                <h3 class="text-warning my-3 p-2">${d.strMeal} </h3>
             </div>
             <div class="all-details">
-                <p class="fs-3 fw-bold text-white">Instructions</p>
+                <p class="fs-3 fw-bold text-warning">Instructions</p>
                 <p class="des">${d.strInstructions}</p>
                 <p class="Area"><span class=" h4 my-3">Area :</span>${d.strArea}</p>
                 <p class="Category"><span class=" h4 my-3">Category :</span> ${d.strCategory}</p>
@@ -339,13 +351,13 @@ async function getsearchDetails(id) {
         }
         Search.innerHTML += `
             <div class="col-12">
-                    <div class="details d-flex justify-content-between p-3 text-white flex-column flex-lg-row">
+                    <div class="details d-flex justify-content-between p-3 text-warning flex-column flex-lg-row">
             <div class="imaggg">
                 <img class="d-block" src="${d.strMealThumb} " alt="" width="100%">
-                <h3 class="text-white my-3 p-2">${d.strMeal} </h3>
+                <h3 class="text-warning my-3 p-2">${d.strMeal} </h3>
             </div>
             <div class="all-details">
-                <p class="fs-3 fw-bold text-white">Instructions</p>
+                <p class="fs-3 fw-bold text-warning">Instructions</p>
                 <p class="des">${d.strInstructions}</p>
                 <p class="Area"><span class=" h4 my-3">Area :</span>${d.strArea}</p>
                 <p class="Category"><span class=" h4 my-3">Category :</span> ${d.strCategory}</p>

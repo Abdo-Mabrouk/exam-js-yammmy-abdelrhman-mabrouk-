@@ -1,3 +1,26 @@
+$("#icon2").click(function() {
+    $(".sidebar").toggleClass("left-0");
+    if ($(this).hasClass('fa-bars')) {
+        $(this).removeClass("fa-bars");
+        $(this).addClass("fa-xmark");
+    } else {
+        $(this).removeClass("fa-xmark");
+        $(this).addClass("fa-bars");
+    }
+});
+
+
+$(".dark-mode").click(function() {
+    $("body").toggleClass("bg-black");
+    $(".sidebar-data").toggleClass("bg-black");
+    if ($(this).hasClass('fa-moon')) {
+        $(this).removeClass("fa-moon");
+        $(this).addClass("fa-sun");
+    } else {
+        $(this).removeClass("fa-sun");
+        $(this).addClass("fa-moon");
+    }
+});
 //!----------------BOM----------------
 let nameee = document.querySelector("#inputName");
 let number = document.querySelector("#number");

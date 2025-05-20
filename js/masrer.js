@@ -21,7 +21,6 @@ $("#icon2").click(function() {
 });
 $(".dark-mode").click(function() {
     $("body").toggleClass("bg-black");
-    $("body").toggleClass("text-white");
     $(".sidebar-data").toggleClass("bg-black");
     if ($(this).hasClass('fa-moon')) {
         $(this).removeClass("fa-moon");
@@ -107,8 +106,8 @@ async function getMealDetails(id) {
                 ${ingredients}
                 </ul>
                 <p class="Tags h4 my-3">Tags :</p>
-                <a href="${d.strSource}" class="btn btn-outline-danger px-5 py-2 fs-6 fw-bold rounded-2">source</a>
-                <a href="${d.strYoutube}" class="btn btn-outline-success px-5 py-2 fs-6 fw-bold rounded-2">youtube </a>
+                <a href="${d.strSource}" class="btn btn-outline-success px-5 py-2 fs-6 fw-bold rounded-2">source</a>
+                <a href="${d.strYoutube}" class="btn btn-outline-danger px-5 py-2 fs-6 fw-bold rounded-2">youtube </a>
             </div>
         </div>
             </div>`
@@ -190,8 +189,8 @@ async function getAreaDetails(id) {
                 ${ingredients}
                 </ul>
                 <p class="Tags h4 my-3">Tags :</p>
-                <a href="${d.strSource}" class="btn btn-outline-danger px-5 py-2 fs-6 fw-bold rounded-2">source</a>
-                <a href="${d.strYoutube}" class="btn btn-outline-success px-5 py-2 fs-6 fw-bold rounded-2">youtube </a>
+                <a href="${d.strSource}" class="btn btn-outline-success px-5 py-2 fs-6 fw-bold rounded-2">source</a>
+                <a href="${d.strYoutube}" class="btn btn-outline-danger px-5 py-2 fs-6 fw-bold rounded-2">youtube </a>
             </div>
         </div>
             </div>`
@@ -271,8 +270,8 @@ async function getingredientsDetails(id) {
                 ${ingredientsss}
                 </ul>
                 <p class="Tags h4 my-3">Tags :</p>
-                <a href="${d.strSource}" class="btn btn-outline-danger px-5 py-2 fs-6 fw-bold rounded-2">source</a>
-                <a href="${d.strYoutube}" class="btn btn-outline-success px-5 py-2 fs-6 fw-bold rounded-2">youtube </a>
+                <a href="${d.strSource}" class="btn btn-outline-success px-5 py-2 fs-6 fw-bold rounded-2">source</a>
+                <a href="${d.strYoutube}" class="btn btn-outline-danger px-5 py-2 fs-6 fw-bold rounded-2">youtube </a>
             </div>
         </div>
             </div>`
@@ -366,8 +365,8 @@ async function getsearchDetails(id) {
                 ${ingredientsss}
                 </ul>
                 <p class="Tags h4 my-3">Tags :</p>
-                <a href="${d.strSource}" class="btn btn-outline-danger px-5 py-2 fs-6 fw-bold rounded-2">source</a>
-                <a href="${d.strYoutube}" class="btn btn-outline-success px-5 py-2 fs-6 fw-bold rounded-2">youtube </a>
+                <a href="${d.strSource}" class="btn btn-outline-success px-5 py-2 fs-6 fw-bold rounded-2">source</a>
+                <a href="${d.strYoutube}" class="btn btn-outline-danger px-5 py-2 fs-6 fw-bold rounded-2">youtube </a>
             </div>
         </div>
             </div>`
